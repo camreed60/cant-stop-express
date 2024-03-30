@@ -3,6 +3,8 @@ In Can't Stop Express, all players try to make their best use of a common roll o
 
 Once the game ends for a player, they calculate their score using their marked dice pair rolls. If they rolled a value less than 5 times, they get a 200 point penalty. Each roll beyond the 5th will provide the score for that respective dice roll.
 
+In this edition, you will choose keepers by entering something like "1.1.2.2.5". This will assign the number in the same position as 5 to be our put-aside value, while the numbers in the positions of 1s and 2s are assigned to our first-pair value and second-pair value respectively for scoring.
+
 Here is a link for a better explanation of the rules.
 https://www.ultraboardgames.com/cant-stop/express-game-rules.php 
 
