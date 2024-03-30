@@ -22,7 +22,7 @@ def roll_dice(num_dice=5, sides=0):
     if num_dice not in range(1, 11):
         list_vals.append(6)
 
-    if sides is None:
+    if sides is None or sides == 0:
         random.seed()
     else:
         random.seed(sides)

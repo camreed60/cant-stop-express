@@ -2,7 +2,6 @@
 
 @author: Camndon Reed
 @version: 3-27-24
-Honor Code statement: I adhered to the Honor Code during completion of this assignment
 """
 import dice
 
@@ -25,7 +24,7 @@ FIFTH_MAX = 8
 COUNT_MAX = 2
 
 
-def set_fifth_die(fifth_dice, rolls, die_value, fifth_count, rnd):   # All DONE
+def set_fifth_die(fifth_dice, rolls, die_value, fifth_count, rnd):   
     """Set fifth dice and return status.
 
     Details fifth dice element adjusted or new if one was added.
@@ -81,7 +80,7 @@ def set_fifth_die(fifth_dice, rolls, die_value, fifth_count, rnd):   # All DONE
     return "invalid call"
         
 
-def valid_keeper_format(keep_string):   # ALL DONE
+def valid_keeper_format(keep_string):  
     """Check for 1.1.2.2.5 format in input.
 
     You must have 2 ones, 2 twos, 1 five and 4 periods delimiting the choice.
@@ -107,7 +106,7 @@ def valid_keeper_format(keep_string):   # ALL DONE
     return valid_format
 
 
-def validate_keepers(rnd, keepers, rolls, counts, fifth_counts, fifth_dice):  # ALL DONE
+def validate_keepers(rnd, keepers, rolls, counts, fifth_counts, fifth_dice):
     """Check keepers for valid keepers based on other rules.
 
     For round 1-3 keepers must be unique, then must use an existing
@@ -147,7 +146,7 @@ def validate_keepers(rnd, keepers, rolls, counts, fifth_counts, fifth_dice):  # 
     return False, "Valid Roll"
     
 
-def get_keepers(rnd, rolls, counts, fifth_counts, fifth_dice):  # ALL DONE
+def get_keepers(rnd, rolls, counts, fifth_counts, fifth_dice):
     """Get input of keeper values and continue until valid.
 
     This will return a list like: [1, 1, 2, 2, 5].
@@ -188,7 +187,7 @@ def get_keepers(rnd, rolls, counts, fifth_counts, fifth_dice):  # ALL DONE
     return keepers
 
 
-def score_keepers(rolls, keepers, counts, scores):  # ALL DONE
+def score_keepers(rolls, keepers, counts, scores): 
     """Score keeper values into scores list.
 
     Scoring is as follows: if the counts for a number value 2-12
@@ -234,7 +233,7 @@ def score_keepers(rolls, keepers, counts, scores):  # ALL DONE
     return first_pair, second_pair, fifth_dice
 
 
-def print_scoreboard(counts, scores, fifth_dice, fifth_count, rnd):  # ALL DONE
+def print_scoreboard(counts, scores, fifth_dice, fifth_count, rnd):
     """Print out the scoreboard after each round.
 
     Scoreboard has a header and should line up summary lines with header.
@@ -302,51 +301,5 @@ def play_game():
     print("-----")
 
 
-if __name__ == '__main__':
-    # Comment play_game() out to test individual functions with main.
-    # play_game()
-    # print("Game Over")
-
-    # HERE ARE SOME SAMPLE CALLS FOR TESTING
-    """
-    # FIFTH DICE TEST - invalid call
-    rnd = 2
-    fifth_dice = [1, 5, 2]
-    rolls = [ 2, 2, 3, 5, 1]
-    die = 5
-    fifth_count = [1, 1, 1]
-    print(set_fifth_die(fifth_dice, rolls, die, fifth_count, rnd))
-    """
-
-    """
-    # GET KEEPERS Valid format for keepers: 1.1.5.2.2
-    # and Nothing for 1.1.5.2.2 input
-    rnd = 3
-    rolls = [ 2, 2, 3, 5, 1]
-    keepers = ["5", "1", "1", "2", "2"]
-    counts = [1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0]
-    fifth_counts = [1, 0, 1]
-    fifth_dice = [1, 2, 0]
-    # valid input: 1.1.5.2.2
-
-    get_keepers(rnd, rolls, counts, fifth_counts, fifth_dice)
-    """
-
-    """
-    # SCORE KEEPERS TEST - (5, 6, 2)
-    rolls = [ 2, 2, 3, 5, 1]
-    keepers = ["5", "1", "1", "2", "2"]
-    counts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    scores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    print(score_keepers(rolls, keepers, counts, scores))
-    """
-
-    """
-    # PRINT SCOREBOARD:
-    counts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    scores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    fifth_dice = [1, 5, 2]
-    fifth_count = [1, 1, 1]
-    rnd = 3
-    print(print_scoreboard(counts, scores, fifth_dice, fifth_count, rnd))
-    """
+play_game()
+    
