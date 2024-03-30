@@ -6,7 +6,7 @@ Once the game ends for a player, they calculate their score using their marked d
 Here is a link for a better explanation of the rules.
 https://www.ultraboardgames.com/cant-stop/express-game-rules.php 
 
-To play in terminal, download dice.py and cantstopx.py and place them in afolder. CD to this folder then type python cantstopx.py
+To play in terminal, download dice.py and cantstopx.py and place them in a folder. In your terminal cd to this folder, then type python cantstopx.py
 - It should look like this:
 
 
