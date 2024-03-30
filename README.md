@@ -5,3 +5,5 @@ Once the game ends for a player, they calculate their score using their marked d
 
 Here is a link for a better explanation of the rules.
 https://www.ultraboardgames.com/cant-stop/express-game-rules.php 
+![image](https://github.com/camreed60/cant-stop-express/assets/160292011/68d65da6-dfb2-4a99-9a25-236cc60b92f0)
+
